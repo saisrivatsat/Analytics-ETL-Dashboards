@@ -1,3 +1,4 @@
+
 # Global Insights Through Data: ETL Pipelines and Interactive Dashboards
 
 ## 1. Introduction
@@ -122,13 +123,13 @@ Install dependencies from the consolidated requirements file:
 pip install -r requirements.txt
 ```
 
-Launch the unified Streamlit interface to switch between all dashboards:
+Then launch the unified Streamlit interface:
 
 ```bash
 streamlit run streamlit_dashboard.py
 ```
 
-Use the sidebar to toggle between Air Quality, World Happiness, and Global Unemployment dashboards.
+Use the sidebar to toggle between **Air Quality**, **World Happiness**, and **Global Unemployment** dashboards.
 
 ---
 

@@ -1,14 +1,18 @@
-# streamlit_dashboard.py  (router at repo root)
-
 import os
 from contextlib import contextmanager
 import runpy
 from pathlib import Path
 import streamlit as st
 
-# Page config (and prevent sub‑apps from resetting it)
-st.set_page_config(page_title="Analytics Dashboards", layout="wide")
-st.set_page_config = lambda *args, **kwargs: None  # no-op in child apps
+# --- Page Config (title + logo) ---
+st.set_page_config(
+    page_title="ETL Analytics Dashboards",
+    page_icon="📊",  
+    layout="wide"
+)
+
+# Prevent sub-apps from resetting page config
+st.set_page_config = lambda *args, **kwargs: None  
 
 BASE = Path(__file__).resolve().parent
 
@@ -22,6 +26,7 @@ def run_from(subdir: str):
     finally:
         os.chdir(prev)
 
+st.title("ETL Analytics Dashboards")
 st.sidebar.title("Dashboards")
 choice = st.sidebar.radio(
     "Select a dashboard",
