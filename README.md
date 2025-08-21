@@ -121,6 +121,8 @@ pip install -r requirements.txt
 streamlit run streamlit_dashboard.py
 ```
 
+Use the sidebar to switch between the Air Quality, World Happiness, and Global Unemployment dashboards.
+
 
 
 ---
