@@ -107,7 +107,14 @@ Analytics-ETL-Dashboards/
 │   ├── outputs/ (visualizations)
 │   └── src/
 │
+├── streamlit_dashboard.py (combined dashboard)
 └── README.md
+```
+
+Launch the unified Streamlit interface to switch between all dashboards with:
+
+```bash
+streamlit run streamlit_dashboard.py
 ```
 
 
