@@ -1,9 +1,11 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
+from pathlib import Path
 
 # Load data
-df = pd.read_csv("data/processed/pm25_geo_enriched.csv")
+BASE = Path(__file__).resolve().parent
+df = pd.read_csv(BASE / "data" / "processed" / "pm25_geo_enriched.csv")
 df["date"] = pd.to_datetime(df["date"])
 df = df.dropna(subset=["pm25", "city", "country"])
 
