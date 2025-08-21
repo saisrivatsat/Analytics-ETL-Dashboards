@@ -93,18 +93,18 @@ The architecture follows a clear progression:
 Analytics-ETL-Dashboards/
 │
 ├── air-quality-project/
-│   ├── data/ (raw + cleaned, ignored in repo)
-│   ├── outputs/ (visualizations, ignored in repo)
+│   ├── data/ (raw + cleaned)
+│   ├── outputs/ (visualizations)
 │   └── src/ (ETL + visualization scripts)
 │
 ├── World-Happiness/
-│   ├── data/ (raw + cleaned, ignored in repo)
-│   ├── outputs/ (visualizations, ignored in repo)
+│   ├── data/ (raw + cleaned)
+│   ├── outputs/ (visualizations)
 │   └── src/
 │
 ├── Global-Unemployment/
-│   ├── data/ (raw + cleaned, ignored in repo)
-│   ├── outputs/ (visualizations, ignored in repo)
+│   ├── data/ (raw + cleaned)
+│   ├── outputs/ (visualizations)
 │   └── src/
 │
 └── README.md
