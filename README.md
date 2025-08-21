@@ -107,12 +107,6 @@ Analytics-ETL-Dashboards/
 │   ├── outputs/ (visualizations, ignored in repo)
 │   └── src/
 │
-├── docs/
-│   ├── ETL_Pipeline.png
-│   └── AnalyticsFinalProjectReport.pdf
-│
-├── streamlit_dashboard.py   # Unified dashboard launcher
-├── requirements.txt
 └── README.md
 ```
 
