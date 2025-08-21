@@ -124,6 +124,12 @@ streamlit run streamlit_dashboard.py
 Use the sidebar to switch between the Air Quality, World Happiness, and Global Unemployment dashboards.
 
 
+Launch the unified Streamlit interface to switch between all dashboards with:
+
+```bash
+streamlit run streamlit_dashboard.py
+```
+
 
 ---
 
