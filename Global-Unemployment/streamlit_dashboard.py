@@ -3,9 +3,11 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
+from pathlib import Path
 
 # Load cleaned data
-df = pd.read_csv("data/cleaned/cleaned_unemployment.csv")
+BASE = Path(__file__).resolve().parent
+df = pd.read_csv(BASE / "data" / "cleaned" / "cleaned_unemployment.csv")
 df["year"] = df["year"].astype(int)
 
 # Streamlit page setup
