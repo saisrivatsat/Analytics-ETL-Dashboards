@@ -20,7 +20,11 @@ def get_pm25_sensors(limit=50):
     if response.status_code != 200:
         raise Exception(f"Failed to fetch sensor list: {response.text}")
     results = response.json().get("results", [])
-    return [r["sensorsId"] for r in results if "sensorsId" in r]
+    # API responses use the key `sensorId` to identify each sensor.
+    # The previous implementation looked for `sensorsId`, which never
+    # exists and resulted in an empty sensor list.  Fetch the correct key
+    # and guard against missing values.
+    return [r["sensorId"] for r in results if r.get("sensorId") is not None]
 
 # 2. Get daily average values for a given sensor ID
 def get_daily_values(sensor_id, limit=365):
