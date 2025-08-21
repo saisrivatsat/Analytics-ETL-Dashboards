@@ -107,7 +107,18 @@ Analytics-ETL-Dashboards/
 │   ├── outputs/ (visualizations)
 │   └── src/
 │
+├── streamlit_dashboard.py (combined dashboard)
+├── requirements.txt
 └── README.md
+```
+
+## Setup
+
+Install dependencies and launch the unified Streamlit interface:
+
+```bash
+pip install -r requirements.txt
+streamlit run streamlit_dashboard.py
 ```
 
 
