@@ -112,22 +112,27 @@ Analytics-ETL-Dashboards/
 └── README.md
 ```
 
-## Setup
+---
 
-Install dependencies from the consolidated requirements file and launch the unified Streamlit interface:
+## 5. Setup
+
+Install dependencies from the consolidated requirements file:
 
 ```bash
 pip install -r requirements.txt
+```
+
+Launch the unified Streamlit interface to switch between all dashboards:
+
+```bash
 streamlit run streamlit_dashboard.py
 ```
 
-Use the sidebar to switch between the Air Quality, World Happiness, and Global Unemployment dashboards.
-
-
+Use the sidebar to toggle between Air Quality, World Happiness, and Global Unemployment dashboards.
 
 ---
 
-## 5. Results and Visualizations
+## 6. Results and Visualizations
 
 ### Air Quality
 
@@ -149,7 +154,7 @@ Use the sidebar to switch between the Air Quality, World Happiness, and Global U
 
 ---
 
-## 6. Technologies Used
+## 7. Technologies Used
 
 * **Programming**: Python (pandas, numpy, seaborn, matplotlib, plotly)
 * **Databases**: PostgreSQL, MongoDB (intermediate store)
@@ -159,23 +164,22 @@ Use the sidebar to switch between the Air Quality, World Happiness, and Global U
 
 ---
 
-## 7. Conclusions
+## 8. Conclusions
 
 This project demonstrates the feasibility and utility of an **integrated ETL pipeline** to process diverse datasets and present insights in a user-friendly, interactive manner. By covering environmental, social, and economic dimensions, it emphasizes how multi-domain data integration can support informed decision-making for policymakers, researchers, and the public.
 
 ---
 
-## 8. Future Work
+## 9. Future Work
 
 * **Machine Learning Integration** → forecasting air pollution, predicting unemployment, clustering happiness determinants.
 * **Geospatial Mapping** → choropleth maps of pollution and unemployment.
 * **Deployment Enhancements** → Docker containerization, cloud deployment for dashboards.
 * **Additional Datasets** → education, healthcare, or climate indicators.
 
-
 ---
 
-## 9. Contributor
+## 10. Contributor
 
 * **Sai Srivatsa Thangallapelly** – Designed and implemented the full ETL pipelines, PostgreSQL integration, and Streamlit dashboards.
 
